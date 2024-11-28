@@ -1,0 +1,80 @@
+<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Talla</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            text-align: center;
+        }
+        .detalle-producto {
+            margin: 2rem auto;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            max-width: 400px;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Selecciona tu Talla</h1>
+
+    <div class="detalle-producto">
+        <h2 id="producto-nombre"></h2>
+        <p id="producto-precio"></p>
+        <label for="talla">Elige tu talla:</label>
+        <select id="talla">
+            <option value="20">20 cm</option>
+            <option value="21">21 cm</option>
+            <option value="22">22 cm</option>
+            <option value="23">23 cm</option>
+            <option value="24">24 cm</option>
+            <option value="25">25 cm</option>
+            <option value="26">26 cm</option>
+            <option value="27">27 cm</option>
+            <option value="28">28 cm</option>
+            <option value="29">29 cm</option>
+            <option value="30">30 cm</option>
+        </select>
+        <br><br>
+        <button onclick="confirmarCompra()">Confirmar Compra</button>
+    </div>
+
+    <script>
+        // Función para obtener parámetros de la URL
+        function obtenerParametros() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                producto: params.get('producto'),
+                precio: params.get('precio'),
+            };
+        }
+
+        const { producto, precio } = obtenerParametros();
+        document.getElementById('producto-nombre').textContent = producto;
+        document.getElementById('producto-precio').textContent = `Precio: $${precio}`;
+
+        function confirmarCompra() {
+            const talla = document.getElementById('talla').value;
+            alert(`¡Gracias por tu compra!\nProducto: ${producto}\nTalla: ${talla} cm\nPrecio: $${precio}`);
+        }
+    </script>
+
+</body>
+</html>
