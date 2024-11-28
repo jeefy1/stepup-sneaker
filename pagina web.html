@@ -1,0 +1,183 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de calzado deportivo, encuentra la mejor calidad para rendir al máximo.">
+    <title>StepUP Sneaker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FF0000;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem;
+        }
+
+        nav a:hover {
+            background-color: #666;
+            border-radius: 5px;
+        }
+
+        #productos {
+            padding: 2rem;
+        }
+
+        #productos h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .producto {
+            flex: 1 1 calc(30% - 2rem);
+            margin: 1rem;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .producto img {
+            max-width: 150px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>StepUP Sneaker</h1>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contáctanos</a>
+</nav>
+
+<main id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+        
+        <div class="producto" onclick="seleccionarProducto('Zapatilla de Voleibol', 120000)">
+            <img src="https://asicsco.vteximg.com.br/arquivos/ids/385404-700-700/1071A091_003_SR_RT_GLB.jpg?v=638436778934270000" alt="Zapatilla Asics">
+            <h3>Zapatilla de Voleibol</h3>
+            <p>Precio: $120.000</p>
+        </div>
+        
+        <div class="producto" onclick="seleccionarProducto('Zapatilla de Baloncesto', 140000)">
+            <img src="https://underarmourcol.vtexassets.com/arquivos/ids/565147/3026634-401_BIV_1.jpg?v=638445729327170000" alt="Zapatilla Hunderamun">
+            <h3>Zapatilla de Baloncesto</h3>
+            <p>Precio: $140.000</p>
+        </div>
+        
+        <div class="producto" onclick="seleccionarProducto('Zapatilla de Running', 160000)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLgYddV4nJo6XJMVMqMnY3c42tccxFkmOoA&s" alt="Zapatilla Adidas">
+            <h3>Zapatilla de Running</h3>
+            <p>Precio: $160.000</p>
+        </div>
+        
+        <div class="producto" onclick="seleccionarProducto('Zapatilla de Balonmano', 140000)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe0S7hpznoRVoWx8DPfrVqjPgF94-Rh71kbw&s" alt="Zapatilla Adidas">
+            <h3>Zapatilla de Balonmano</h3>
+            <p>Precio: $140.000</p>
+        </div>
+        
+        <div class="producto" onclick="seleccionarProducto('Tennis Asics Gel-Excite 10', 258854)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF1ePZXVcOOn1JgOl_wFxTcZJlXq005sOhYA&s" alt="Tennis Asics Gel-Excite 10">
+            <h3>Tennis Asics Gel-Excite 10</h3>
+            <p>Precio: $258.854</p>
+        </div>
+       
+        <div class="producto" onclick="seleccionarProducto('Asics Patriot 13', 198654)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AwpeYstpaZ_jwWPMMXfTL9rJc4PxfPUr6w&s" alt="Asics Patriot 13">
+            <h3>Asics Patriot 13</h3>
+            <p>Precio: $198.654</p>
+        </div>
+        
+        <div class="producto" onclick="seleccionarProducto('Adidas Duramos SL', 227970)">
+            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/e4c75401867247059493b79a04ff64c7_9366/Tenis_Duramo_SL_Beige_IE7966_01_standard.jpg" alt="Adidas Duramos SL">
+            <h3>Adidas Duramos SL</h3>
+            <p>Precio: $227.970</p>
+        </div>
+       
+        <div class="producto" onclick="seleccionarProducto('Charged Pursuit 3', 209940)">
+            <img src="https://underarmourcol.vtexassets.com/arquivos/ids/556651/3024878_600_1.jpg?v=638367211817870000" alt="Charged Pursuit 3">
+            <h3>Charged Pursuit 3</h3>
+            <p>Precio: $209.940</p>
+        </div>
+        
+        <div class="producto" onclick="seleccionarProducto('Asics Upcourt 5', 198650)">
+            <img src="https://www.asics.com.co/arquivos/ids/385387-1000-1000/Tenis-ASICS-Upcourt-5---Masculino---Azul.jpg" alt="Asics Upcourt 5">
+            <h3>Asics Upcourt 5</h3>
+            <p>Precio: $198.650</p>
+        </div>
+        
+        <div class="producto" onclick="seleccionarProducto('Asics Gel-Game 9', 180594)">
+            <img src="https://www.asics.com.co/arquivos/ids/354127-1000-1000/Tenis-ASICS-GEL-Game-9---Masculino---Blanco.jpg" alt="Asics Gel-Game 9">
+            <h3>Asics Gel-Game 9</h3>
+            <p>Precio: $180.594</p>
+        </div>
+        
+        <div class="producto" onclick="seleccionarProducto('Nike Precision 7', 368900)">
+            <img src="https://www.labarcashop.com/cdn/shop/files/NIKE-FN4322-100-2.jpg?v=1720549554&width=720" alt="Nike Precision 7">
+            <h3>Nike Precision 7</h3>
+            <p>Precio: $368.900</p>
+        </div>
+        
+        <div class="producto" onclick="seleccionarProducto('Nike DD9535-007 Precision', 286965)">
+            <img src="https://calzacosta.vtexassets.com/arquivos/ids/285953/DD9535-007-1.jpg?v=638551172949730000" alt="Nike DD9535-007 Precision">
+            <h3>Nike DD9535-007 Precision</h3>
+            <p>Precio: $286.965</p>
+        </div>
+    </div>
+</main>
+
+<script>
+    function seleccionarProducto(producto, precio) {
+        const url = `hacercompra.html?producto=${encodeURIComponent(producto)}&precio=${precio}`;
+        window.location.href = url;
+    }
+</script>
+
+<footer>
+    <p>&copy; 2024 StepUP Sneaker. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
